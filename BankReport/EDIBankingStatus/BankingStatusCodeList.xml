@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PaymentStatus>
+    <status code="2" desc="Syntax version or level not supported" result="F" source="contrl" bank="citi"/>
+    <status code="12" desc="Invalid value" result="F" source="contrl" bank="citi"/>
+    <status code="13" desc="Missing Mandatory" result="F" source="contrl" bank="citi"/>
+    <status code="15" desc="Not supported in this position" result="F" source="contrl" bank="citi"/>
+    <status code="16" desc="Too many constituents" result="F" source="contrl" bank="citi"/>
+    <status code="18" desc="Unspecified error" result="F" source="contrl" bank="citi"/>
+    <status code="22" desc="Invalid service character(s)" result="F" source="contrl" bank="citi"/>
+    <status code="28" desc="References do not match (UNB/UNG/UNH control number references to do not match)" result="F" source="contrl" bank="citi"/>
+    <status code="29" desc="Control count does notmatch number of instances received" result="F" source="contrl" bank="citi"/>
+    <status code="33" desc="Invalid occurrence outside message or functional group" result="F" source="contrl" bank="citi"/>
+    <status code="37" desc="Invalid type of character(s)" result="F" source="contrl" bank="citi"/>
+    <status code="39" desc="Data element too long" result="F" source="contrl" bank="citi"/>
+    <status code="40" desc="Data element too short" result="F" source="contrl" bank="citi"/>
+    <status code="46" desc="Character set not supported/available" result="F" source="contrl" bank="citi"/>
+    
+    <status code="1" desc="Message Content Accepted" result="S" source="bansta" bank="citi"/>
+    <status code="13" desc="Message Type Not Supported" result="F" source="bansta" bank="citi"/>
+    <status code="14" desc="Error Message" result="F" source="bansta" bank="citi"/>
+    <status code="15" desc="Response After Correction" result="F" source="bansta" bank="citi"/>
+    <status code="18" desc="Request For Clearance" result="F" source="bansta" bank="citi"/>
+    <status code="21" desc="Unsolicited Text" result="F" source="bansta" bank="citi"/>
+    <status code="30" desc="Transaction Cannot Be Processed Until Action Is Taken By The Sender" result="F" source="bansta" bank="citi"/>
+    <status code="31" desc="Transaction Cannot Be Processed By The Reciepient" result="F" source="bansta" bank="citi"/>
+    <status code="32" desc="Transaction Already Made" result="F" source="bansta" bank="citi"/>
+    <status code="33" desc="Transaction Rejected" result="F" source="bansta" bank="citi"/>
+    <status code="34" desc="Transaction Awaiting Processing" result="F" source="bansta" bank="citi"/>
+    <status code="35" desc="Transaction Unknown" result="F" source="bansta" bank="citi"/>
+    <status code="45" desc="Beneficiary Account Unknown" result="F" source="bansta" bank="citi"/>
+    <status code="46" desc="Payees Account Number Unkown" result="F" source="bansta" bank="citi"/>
+    <status code="47" desc="Payor's Account Number Unknown" result="F" source="bansta" bank="citi"/>
+    <status code="49" desc="Execution Date Not Possible" result="F" source="bansta" bank="citi"/>
+    <status code="50" desc="Value Date Not Possible" result="F" source="bansta" bank="citi"/>
+    <status code="51" desc="Currency Code Not Possible" result="F" source="bansta" bank="citi"/>
+    <status code="52" desc="Invalid Decimal Number" result="F" source="bansta" bank="citi"/>
+    <status code="56" desc="Beneficiary Is Unable To Identify The Transaction" result="F" source="bansta" bank="citi"/>
+    <status code="61" desc="Transaction Reason Not Reportable" result="F" source="bansta" bank="citi"/>
+    
+    <status code="C00" desc="Valid file." result="P" source="contrl" bank="hsbc"/>
+    <status code="C01" desc="File header missing." result="F" source="contrl" bank="hsbc"/>
+    <status code="C03" desc="Map not released (not present in MERCMAP file)." result="F" source="contrl" bank="hsbc"/>
+    <status code="C04" desc="Unknown/undefined sender." result="F" source="contrl" bank="hsbc"/>
+    <status code="C05" desc="Duplicate file/interchange." result="F" source="contrl" bank="hsbc"/>
+    <status code="C06" desc="File creation date older than 5 days." result="F" source="contrl" bank="hsbc"/>
+    <status code="C07" desc="Invalid record count." result="F" source="contrl" bank="hsbc"/>
+    <status code="C09" desc="Trailer record missing." result="F" source="contrl" bank="hsbc"/>
+    <status code="C18" desc="Mandatory file creation date missing." result="F" source="contrl" bank="hsbc"/>
+    <status code="C19" desc="Mandatory file creation time missing." result="F" source="contrl" bank="hsbc"/>
+    <status code="C22" desc="Mandatory file reference number missing." result="F" source="contrl" bank="hsbc"/>
+    <status code="C23" desc="Invalid file creation time." result="F" source="contrl" bank="hsbc"/>
+    <status code="C37" desc="Invalid File Creation date." result="F" source="contrl" bank="hsbc"/>
+    <status code="C48" desc="BACS File Invalid mix of Transaction Codes found." result="F" source="contrl" bank="hsbc"/>
+    <status code="C50" desc="Invalid count of SEQ (CNT SEGMENT)." result="F" source="contrl" bank="hsbc"/>
+    <status code="C51" desc="Invalid count of SEG (UNT SEGMENT)." result="F" source="contrl" bank="hsbc"/>
+    <status code="C52" desc="Invalid End of Autack, no UNT found." result="F" source="contrl" bank="hsbc"/>
+    <status code="C53" desc="Invalid Autack SEG Count (UNT SEGMENT)." result="F" source="contrl" bank="hsbc"/>
+    <status code="C54" desc="Autack already processed, second Autack found." result="F" source="contrl" bank="hsbc"/>
+    <status code="C72" desc="Acknowledges file submission to trigger Return Processing." result="F" source="contrl" bank="hsbc"/>
+    <status code="C73" desc="Invalid Returns Destination." result="F" source="contrl" bank="hsbc"/>
+    <status code="C75" desc="DD file not in date range." result="F" source="contrl" bank="hsbc"/>
+    <status code="C76" desc="Association code not compatible with customer type." result="F" source="contrl" bank="hsbc"/>
+    <status code="C77" desc="Invalid CNT Qualifier." result="F" source="contrl" bank="hsbc"/>
+    <status code="C78" desc="File ref not equal to UNZ ref." result="F" source="contrl" bank="hsbc"/>
+
+    <status code="000" desc="Valid payment." result="S" source="contrl,bansta" bank="hsbc"/>
+    <status code="B00" desc="Payment accepted." result="P" source="contrl,bansta" bank="hsbc"/>
+    <status code="B01" desc="Unsuccessful conversion, invalid syntax." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B04" desc="Duplicate Payment." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B05" desc="Credit account missing." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B06" desc="Invalid debit account." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B07" desc="Debit account missing." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B08" desc="Target System invalid." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B09" desc="Value date too distant." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B10" desc="Value date before current date." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B11" desc="MT101 – no bilateral agreement." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B12" desc="Invalid TEMPO clearing code." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B13" desc="EDI MESSAGE GREATER THAN 20K." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B14" desc="Amount not bigger than zero." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B15" desc="Invalid 2nd Party Account." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B16" desc="Payment method/currency incompatibility." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B23" desc="PAYMENT SORT REJECT." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B24" desc="Invalid BACS user ID." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B25" desc="Invalid TEMPO direct debits ID." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B26" desc="Invalid TEMPO direct credits ID." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B27" desc="Invalid MPS ID." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B28" desc="INVALID CHECKPOINT ID." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B29" desc="Invalid Customer ID." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B30" desc="Customer not registered at BACS EFS." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B31" desc="Invalid currency." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B32" desc="Value date not a business day." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B33" desc="BACS EFS FINPAY – Credit owner not found." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B34" desc="Invalid Tempo destination country." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B35" desc="MPS ID MISSING IN STATIC DATA." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B36" desc="BACS Value Date Invalid." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B37" desc="INVALID BIC ADDRESS." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B38" desc="Invalid PEP+ id." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B39" desc="Invalid-Date." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B40" desc="Weekend-Date." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B41" desc="Bank-Holiday-Date." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B42" desc="Timezone-Record-Missing." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B43" desc="INVALID DIFFERENCE BEWTEEN DATES." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B44" desc="BIC address missing for non HSBC account." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B45" desc="INVALID HUB VALUE DATE." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B46" desc="Invalid Credit Account." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B47" desc="Invalid Payment Set num." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B48" desc="Invalid Payment method for Debit Account." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B50" desc="Invalid Payment Set." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B51" desc="Invalid Value Date. Cut Off time missed." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B52" desc="Invalid Autopay Credit Account." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B53" desc="Autopay value date not greater than today." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B54" desc="Hub Site not set up on ABC Database." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B55" desc="BACS ID missing in Static Data." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B56" desc="TEMPO Debit ID missing in Static Data." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B57" desc="TEMPO Debit ID missing in Static Data." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B58" desc="PEP+ Id missing in Static Data." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B59" desc="BACS transaction code quoted requires zero amount." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B60" desc="Legacy Currency No Longer Acceptable." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B61" desc="Amount too large for payment method." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B62" desc="Invalid Cheque Delivery method." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B63" desc="Invalid COS ID or no COS ID quoted." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B64" desc="Default Receiving Branch not set up." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B65" desc="Invalid HUB Credit Account." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B66" desc="Invalid Hexagon User Id." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B67" desc="Invalid Hexagon Account Id." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B68" desc="Delivery Method not quoted." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B69" desc="Invalid Delivery Method." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B70" desc="Delivery Method does not exist." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B71" desc="Payout Location does not exist." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B72" desc="Payment Reference missing." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B73" desc="Activation Date/Instrument Date before Current Date." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B74" desc="Instrument Date before Activation Date." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B75" desc="Invalid Beneficiary BIC Address." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B76" desc="Amount exceeds local country limit." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B77" desc="Invalid NNE value." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B78" desc="Regulatory Code Not Present." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B79" desc="Mandatory Data Missing." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B80" desc="Invalid account type." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B81" desc="Data Record: Transaction amount not numeric." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B82" desc="Cancellation cannot be executed." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B83" desc="DD automatically re-presented." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B84" desc="Cancellation failed – Incorrect date." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B85" desc="Customer not Authorised to originate Direct debits." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B86" desc="Duplicate Customer reference." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B87" desc="Direct debit item not in date range." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B88" desc="Mandatory country code missing." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B89" desc="Invalid country code." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B90" desc="Invalid Bank Sort Code." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B91" desc="Second Party Description is mandatory." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B92" desc="Bank Local code is not valid." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B93" desc="Ordering Customer ACH ID missing." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B94" desc="LIN and SEQ limit reached." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B95" desc="Invalid Second Party Account Format." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B96" desc="Invalid Collection Type." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B97" desc="Invalid Cancellation Type." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B98" desc="Invalid Code Type." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B99" desc="Back office system map failure." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B9A" desc="Invalid Advice Indicator." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="B9B" desc="Invalid WHT Indicator." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BBA" desc="Debtor Account Invalid." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BBB" desc="Account Closed/Transferred." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BBC" desc="Incorrect Name Of Debtor." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BBD" desc="Creditor Unknown." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BBE" desc="Insufficient Funds." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BBF" desc="No Valid Or Active Mandate/Cancelled." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BBG" desc="Court Decision/Account Blocked." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BBH" desc="Account Blocked/Reason Not Specified." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BBI" desc="Debtor Deceased." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BBJ" desc="Disputed By Debtor/Unidentified Dd." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BBK" desc="Duplicate Or Already Paid." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BBL" desc="Dispute On Amount." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BBM" desc="Dispute On Date." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BBN" desc="Delayed Payment." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BBO" desc="Creditor Recalled Payment." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BBP" desc="Disputed Date By Debtor." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BBQ" desc="Invalid Debtors Account." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BBR" desc="Dd Forbidden For This Type Of Account." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BBS" desc="Details Not Clear." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BBT" desc="Return/Chargeback." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BBU" desc="Non Presentation Of Gse." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BBV" desc="Instruction Cancelled." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BBW" desc="No Special Reason Mentioned." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BBX" desc="Payers Account Frozen." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BBY" desc="Sundry Reasons." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BBZ" desc="Validation Failures." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BCA" desc="Refer to Payer." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BCB" desc="Exceeds Authority." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BCC" desc="Invalid Amount." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BCD" desc="Account Dormant." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BCE" desc="Duplicate BHEX Account Numbers for GIB Id." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BCF" desc="Invalid Fiscal Id." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BCG" desc="Different Fiscal Id In Account." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BCH" desc="GE Retrieval Error." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BCI" desc="Total Instructions in batch mismatch." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BCJ" desc="Debit Account mismatch." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BCK" desc="Account type/currency code does not support requested transaction type." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BCL" desc="Duplicate Instruction, Record or Reference." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BCM" desc="Value Date Error." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BCN" desc="Incomplete/Invalid Instruction." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BCO" desc="Template Not found." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BCP" desc="Template Type Does Not Match Instruction Type." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BCQ" desc="Template Error." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BCR" desc="Positive Acknowledgement - Mexico." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BCS" desc="Account Not 20 chars - Mexico." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BCT" desc="CASHTECH COS Mandatory Receiving Branch missing." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BCU" desc="Cancellation failed – Incorrect 2nd party number or bankgiro number." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BCV" desc="Cancellation failed – Incorrect amount." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BCW" desc="Cancellation failed – Incorrect bankgiro number." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BCX" desc="Cancellation failed – Bankgiro number missing." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BCZ" desc="Cancellation failed – transaction missing at BGC." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BCY" desc="Transaction Amount With Decimal Not Allowed For Taiwan." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BDA" desc="Cancellation WARNING – collection stopped by debtor." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BDB" desc="Cancellation WARNING – stopped collection now accepted by debtor." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BDC" desc="Cancellation WARNING – cancellation rejected due to time limit." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BDD" desc="Originator ACH ID invalid." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BDE" desc="Security Account not found/set up." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BDF" desc="INVALID BUS CODE." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BDG" desc="HSBC Local Validation Failure." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BDH" desc="Rejected by Back Office." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BDI" desc="UNSUCCESSFUL SECOND PARTY CAPTURE." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BDJ" desc="CANNOT TRANSFER TO SAME ACCOUNT." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BDK" desc="DUPLICATE MAINTENANCE RECORD." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BDL" desc="SECOND PARTY SHORT NAME MANDATORY." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BDM" desc="INVALID RECORD TYPE." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BDN" desc="INVALID SECOND PARTY." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BDO" desc="INVALID CBID CODE." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BDP" desc="INVALID FIRST PARTY." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BDQ" desc="REJECTED BY BOS FOR SPAIN RETURNS." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BDZ" desc="ACTION NOT REQUIRED." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="BZZ" desc="Customer Data not found/set up." result="F" source="contrl,bansta" bank="hsbc"/>
+    <status code="F1" desc="Processed." result="S" source="bansta" bank="hsbc"/>
+    <status code="F2" desc="Rejected." result="F" source="bansta" bank="hsbc"/>
+    <status code="F3" desc="Accepted." result="P" source="bansta" bank="hsbc"/>
+    <status code="F4" desc="Cheque cleared." result="S" source="bansta" bank="hsbc"/>
+
+    <status code="2" desc="Syntax version or level  not supported" result="F" source="contrl" bank="scb"/>
+    <status code="7" desc="Interchange recipient not actual recipient" result="F" source="contrl" bank="scb"/>
+    <status code="12" desc="Invalid value" result="F" source="contrl" bank="scb"/>
+    <status code="13" desc="Missing" result="F" source="contrl" bank="scb"/>
+    <status code="14" desc="Value not supported in this position" result="F" source="contrl" bank="scb"/>
+    <status code="15" desc="Not supported in this position" result="F" source="contrl" bank="scb"/>
+    <status code="16" desc="Too many constituents" result="F" source="contrl" bank="scb"/>
+    <status code="17" desc="No Agreement" result="F" source="contrl" bank="scb"/>
+    <status code="18" desc="Unspecified error" result="F" source="contrl" bank="scb"/>
+    <status code="19" desc="Invalid decimal notation" result="F" source="contrl" bank="scb"/>
+    <status code="20" desc="Character invalid as service character" result="F" source="contrl" bank="scb"/>
+    <status code="21" desc="Invalid character(s)" result="F" source="contrl" bank="scb"/>
+    <status code="22" desc="Invalid service character(s)" result="F" source="contrl" bank="scb"/>
+    <status code="23" desc="Unknown Interchange sender" result="F" source="contrl" bank="scb"/>
+    <status code="24" desc="Too old" result="F" source="contrl" bank="scb"/>
+    <status code="25" desc="Test indicator not supported" result="F" source="contrl" bank="scb"/>
+    <status code="26" desc="Duplicate detected" result="F" source="contrl" bank="scb"/>
+    <status code="27" desc="Security function not supported" result="F" source="contrl" bank="scb"/>
+    <status code="28" desc="References do not match" result="F" source="contrl" bank="scb"/>
+    <status code="29" desc="Control count does not match number of instances received" result="F" source="contrl" bank="scb"/>
+    <status code="30" desc="Functional groups and messages mixed" result="F" source="contrl" bank="scb"/>
+    <status code="31" desc="More than one message type in group" result="F" source="contrl" bank="scb"/>
+    <status code="32" desc="Lower level empty" result="F" source="contrl" bank="scb"/>
+    <status code="33" desc="Invalid occurrence outside message or functional group" result="F" source="contrl" bank="scb"/>
+    <status code="34" desc="Nesting indicator not allowed" result="F" source="contrl" bank="scb"/>
+    <status code="35" desc="Too many segment repetitions" result="F" source="contrl" bank="scb"/>
+    <status code="36" desc="Too many segment group repetitions" result="F" source="contrl" bank="scb"/>
+    <status code="37" desc="Invalid type of character(s)" result="F" source="contrl" bank="scb"/>
+    <status code="38" desc="Missing digit in front of decimal sign" result="F" source="contrl" bank="scb"/>
+    <status code="39" desc="Data element too long" result="F" source="contrl" bank="scb"/>
+    <status code="40" desc="Data element too short" result="F" source="contrl" bank="scb"/>
+    <status code="41" desc="Permanent communication network error" result="F" source="contrl" bank="scb"/>
+    <status code="42" desc="Temporary communication network error" result="F" source="contrl" bank="scb"/>
+    <status code="43" desc="Unknown interchange recipient" result="F" source="contrl" bank="scb"/>
+
+    <status code="F1" desc="Processed." result="S" source="bansta" bank="scb"/>
+    <status code="F2" desc="Rejected." result="F" source="bansta" bank="scb"/>
+    <status code="F3" desc="Accepted." result="P" source="bansta" bank="scb"/>
+    <status code="F4" desc="Cheque cleared." result="S" source="bansta" bank="scb"/>
+</PaymentStatus>

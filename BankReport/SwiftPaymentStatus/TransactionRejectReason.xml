@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ReasonCode>
+  <reason code="AC01" desc="Format of the account number specified is not correct."/>
+  <reason code="AC02" desc="Format of the account number specified is non-numeric."/>
+  <reason code="AC03" desc="Format of the account number specified is not valid for local Sort/National Clearing Code."/>
+  <reason code="AC04" desc="Account number specified has been closed on the Receiver's books."/>
+  <reason code="AC05" desc="Account number specified is not a valid account at the Final Agent."/>
+  <reason code="AC06" desc="Account specified is blocked, prohibiting posting of transactions against it."/>
+  <reason code="AC07" desc="Name provided is not valid."/>
+  <reason code="AG01" desc="Transaction forbidden on this type of account (formerly NoAgreement)."/>
+  <reason code="AG02" desc="Bank Operation code specified in the message is not valid for receiver."/>
+  <reason code="AM01" desc="Specified message amount is equal to zero."/>
+  <reason code="AM02" desc="Specified transaction/message amount is greater than allowed maximum."/>
+  <reason code="AM03" desc="Specified message amount is in an non processable currency outside of existing agreement."/>
+  <reason code="AM04" desc="Amount of funds available to cover specified message amount is insufficient."/>
+  <reason code="AM05" desc="This message appears to have been duplicated."/>
+  <reason code="AM06" desc="Specified transaction amount is less than agreed minimum."/>
+  <reason code="AM07" desc="Amount specified in message has been blocked by regulatory authorities."/>
+  <reason code="AM08" desc="Specified charges amount is not as agreed between sender and receiver."/>
+  <reason code="AM09" desc="Amount received is not the amount agreed or expected."/>
+  <reason code="AM10" desc="Sum of instructed amounts does not equal the control sum."/>
+  <reason code="BE01" desc="Identification of end customer is not consistent with associated account number. (formerly CreditorConsistency)"/>
+  <reason code="BE02" desc="Creditor specified is not known at associated Sort/National Clearing code."/>
+  <reason code="BE03" desc="Creditor specified no longer exists in the books."/>
+  <reason code="BE04" desc="Specification of creditor's address, which is required for payment, is missing/not correct (formerly IncorrectCreditorAddress)."/>
+  <reason code="BE05" desc="Party who initiated the message is not recognised by the end customer."/>
+  <reason code="BE06" desc="End customer specified is not known at associated Sort/National Bank Code or does no longer exist in the books."/>
+  <reason code="BE07" desc="Specification of debtor's address, which is required for payment, is missing/not correct."/>
+  <reason code="DT01" desc="Invalid date."/>
+  <reason code="ED01" desc="Correspondent bank not possible."/>
+  <reason code="ED02" desc="Transaction reason non reportable."/>
+  <reason code="ED03" desc="Balance of payments complementary info is requested."/>
+  <reason code="ED04" desc="Charge details not correct."/>
+  <reason code="ED05" desc="Settlement of the transaction has failed."/>
+  <reason code="MD01" desc="Mandate is cancelled or invalid."/>
+  <reason code="MD02" desc="Mandate related information data required by the scheme is missing."/>
+  <reason code="MD03" desc="File format incomplete or invalid."/>
+  <reason code="MD04" desc="File format incorrect in terms of grouping indicator."/>
+  <reason code="MD05" desc="Creditor or creditor's agent should not have collected the direct debit."/>
+  <reason code="MD06" desc="Return of funds requested by end customer."/>
+  <reason code="MD07" desc="End customer is deceased."/>
+  <reason code="MS01" desc="Reason has not been specified due to sensitivities."/>
+  <reason code="MS02" desc="Reason has not been specified by end customer."/>
+  <reason code="MS03" desc="Reason has not been specified by agent."/>
+  <reason code="NARR" desc="Reason is provided as narrative information in the additional reason information."/>
+  <reason code="PY01" desc="Unknown account with institution."/>
+  <reason code="RC01" desc="Bank identifier code specified in the message has an incorrect format."/>
+  <reason code="RC02" desc="Routing code specified in the transaction/message is not numeric."/>
+  <reason code="RC03" desc="Routing code specified in the transaction/message is not valid for local clearing."/>
+  <reason code="RC04" desc="Routing code specified in the transaction/message refers to a closed branch."/>
+  <reason code="RF01" desc="Transaction reference is not unique within the message."/>
+  <reason code="TM01" desc="Associated message was received after agreed processing cut-off time."/>
+</ReasonCode>

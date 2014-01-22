@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ActionCode>
+    <status code="4" desc="This level and all low level rejected." result="F"/>
+    <status code="7" desc="This level acknowledged, next lower level acknowledged if not explicitly rejectd." result="P"/>
+    <status code="8" desc="Interchage received." result="P"/>
+</ActionCode>

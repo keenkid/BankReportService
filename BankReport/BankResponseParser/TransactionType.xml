@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TransactionType>
+    <transType code="BOE" desc="Bill of exchange"/>
+    <transType code="CHG" desc="Charges and other expenses"/>
+    <transType code="CHK" desc="Cheques"/>
+    <transType code="CLR" desc="Cash Letter/cheque remittances"/>
+    <transType code="CMS" desc="Cash Management item – sweeping"/>
+    <transType code="CMT" desc="Cash Management item – Topping"/>
+    <transType code="COM" desc="Commission"/>
+    <transType code="DDT" desc="Direct Debit Item"/>
+    <transType code="DIV" desc="Dividends–Warrants"/>
+    <transType code="FEX" desc="Foreign exchange"/>
+    <transType code="INT" desc="Interest"/>
+    <transType code="MSC" desc="Miscellaneous"/>
+    <transType code="RTI" desc="Returned item"/>
+    <transType code="SEC" desc="Securities"/>
+    <transType code="STO" desc="Standing Order"/>
+    <transType code="TCK" desc="Travellers cheques"/>
+    <transType code="TRF" desc="Transfer"/>
+    <!--BAI code for SCB-->
+    <transType code="015" desc="Closing ledger"/>
+    <transType code="115" desc="Lockbox deposits"/>
+    <transType code="118" desc="Lockbox adjustment credit"/>
+    <transType code="167" desc="Direct debit"/>
+    <transType code="169" desc="Incoming domestic ACH transfer"/>
+    <transType code="171" desc="Loan deposit"/>
+    <transType code="174" desc="Details other deposits"/>
+    <transType code="175" desc="Cheque deposit"/>
+    <transType code="195" desc="Incoming domestic wire transfer"/>
+    <transType code="206" desc="Book transfer"/>
+    <transType code="208" desc="Incoming international wire transfer"/>
+    <transType code="213" desc="Letter of credit"/>
+    <transType code="214" desc="FX receipt"/>
+    <transType code="222" desc="Foreign cheque deposit"/>
+    <transType code="252" desc="Debit reversal"/>
+    <transType code="255" desc="Returned cheque"/>
+    <transType code="257" desc="Returned direct debit"/>
+    <transType code="266" desc="Returned item"/>
+    <transType code="275" desc="Zero balancing credit"/>
+    <transType code="295" desc="ATM Credit"/>
+    <transType code="301" desc="Comercial deposits"/>
+    <transType code="302" desc="Correspondent bank deposits"/>
+    <transType code="351" desc="Individual investment sold"/>
+    <transType code="354" desc="Credit interest"/>
+    <transType code="357" desc="Credit interest adjustment"/>
+    <transType code="366" desc="Cash deposit"/>
+    <transType code="399" desc="Miscellaneous credit"/>
+    <!--Debit-->
+    <transType code="415" desc="Lockbox adjustment debit"/>
+    <transType code="451 " desc="Direct debit payment"/>
+    <transType code="457" desc="Cheque paid"/>
+    <transType code="467" desc="Individual domestic ACH payment"/>
+    <transType code="469" desc="Batch domestic ACH payment"/>
+    <transType code="475" desc="Cheque paid"/>
+    <transType code="477" desc="Standing order"/>
+    <transType code="481" desc="Loan payment"/>
+    <transType code="495" desc="Domestic wire transfer"/>
+    <transType code="506" desc="Book transfer"/>
+    <transType code="508" desc="International wire payment"/>
+    <transType code="512" desc="Letter of credit – debit"/>
+    <transType code="513" desc="Letter of credit"/>
+    <transType code="514" desc="FX payment"/>
+    <transType code="522" desc="Foreign cheque"/>
+    <transType code="552" desc="Credit reversal"/>
+    <transType code="555" desc="Returned cheque"/>
+    <transType code="557" desc="Returned direct debit"/>
+    <transType code="561" desc="Individual rejected credits"/>
+    <transType code="564" desc="Overdraft fee"/>
+    <transType code="566" desc="Returned item"/>
+    <transType code="567" desc="Return item fee"/>
+    <transType code="575" desc="Zero-balancing debit"/>
+    <transType code="651" desc="Individual investment purchased"/>
+    <transType code="654" desc="Debit interest"/>
+    <transType code="659" desc="Debit interest adjustment"/>
+    <transType code="669" desc="Clearing settlement debit"/>
+    <transType code="673" desc="Payroll"/>
+    <transType code="698" desc="Billing charges"/>
+    <transType code="699" desc="Miscellaneous debit"/>
+</TransactionType>

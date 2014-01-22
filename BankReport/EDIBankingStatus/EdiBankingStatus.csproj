@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F9CF87B3-1302-4684-8AE4-3216B49FFE6D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EdiBankingStatus</RootNamespace>
+    <AssemblyName>EdiBankingStatus</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.9.0, Culture=neutral, PublicKeyToken=b32731d11ce58905">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.DataAccess, Version=2.112.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BankingReport\BankAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BankingReport\CitiBansta.cs" />
+    <Compile Include="BankingReport\CitiContrl.cs" />
+    <Compile Include="BankingReport\CitiPaymul.cs" />
+    <Compile Include="BankingReport\HsbcBansta.cs" />
+    <Compile Include="BankingReport\HsbcContrl.cs" />
+    <Compile Include="BankingReport\HsbcPaymul.cs" />
+    <Compile Include="BankingReport\ReportFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BankingReport\ReportTypeAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BankingReport\ScbBansta.cs" />
+    <Compile Include="BankingReport\ScbContrl.cs" />
+    <Compile Include="BankingReport\ScbPaymul.cs" />
+    <Compile Include="BankingReport\AbstractBankingReport.cs" />
+    <Compile Include="BankingReport\Bansta.cs" />
+    <Compile Include="BankingReport\Contrl.cs" />
+    <Compile Include="Res.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Res.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SqlScriptFactory.cs" />
+    <Compile Include="BankingStatusXmlQuery.cs" />
+    <Compile Include="Configuration\BankMapSectionHandler.cs" />
+    <Compile Include="Configuration\ReportMapSectionHandler.cs" />
+    <Compile Include="Configuration\ValueMapUtil.cs" />
+    <Compile Include="DBHelper\DbDataAdapterHelper.cs" />
+    <Compile Include="DBHelper\DbHelper.cs" />
+    <Compile Include="BankingReport\Paymul.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportProcess.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Common.csproj">
+      <Project>{8076851D-CCD8-47AF-9493-D5DE2C178E87}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BankReportMonitor\BankReportMonitor.csproj">
+      <Project>{4A9EA69D-00A2-418A-B5EA-B30A289C265E}</Project>
+      <Name>BankReportMonitor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\OutputEntity\OutputEntity.csproj">
+      <Project>{A5DEB9ED-2049-4264-BA58-F65C4092C5CE}</Project>
+      <Name>OutputEntity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Res.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Res.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy /y $(TargetPath) $(SolutionDir)BankReportTest\$(OutDir)BankReport
+copy /y $(TargetPath).config $(SolutionDir)BankReportTest\$(OutDir)BankReport
+copy /y $(TargetPath).config $(SolutionDir)RC\</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

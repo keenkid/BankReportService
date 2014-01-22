@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1CAEC08B-6135-4D09-AC88-8C0E190EAB69}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EDIReportTest</RootNamespace>
+    <AssemblyName>EDIReportTest</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IServiceHost.cs" />
+    <Compile Include="ServiceHost.cs" />
+    <Compile Include="ServiceHostManager.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BankReportMonitor\BankReportMonitor.csproj">
+      <Project>{4A9EA69D-00A2-418A-B5EA-B30A289C265E}</Project>
+      <Name>BankReportMonitor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BankReport\BankResponseParser\BankResponseParser.csproj">
+      <Project>{C1C5411E-FE28-4C02-BBEF-2A397D5B4F39}</Project>
+      <Name>BankResponseParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BankReport\EDIBankingStatus\EdiBankingStatus.csproj">
+      <Project>{F9CF87B3-1302-4684-8AE4-3216B49FFE6D}</Project>
+      <Name>EdiBankingStatus</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BankReport\SwiftPaymentStatus\SwiftPaymentStatus.csproj">
+      <Project>{24C933CE-C4A8-429B-B349-4762878D6798}</Project>
+      <Name>SwiftPaymentStatus</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{8076851D-CCD8-47AF-9493-D5DE2C178E87}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OutputEntity\OutputEntity.csproj">
+      <Project>{A5DEB9ED-2049-4264-BA58-F65C4092C5CE}</Project>
+      <Name>OutputEntity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy /y $(SolutionDir)RC\*.* $(TargetDir)</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
